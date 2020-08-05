@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     ImageView imgView;
     TextView txtView;
 
-
+//philip
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,11 +57,11 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                final Bitmap bmm = ((BitmapDrawable) imgView.getDrawable()).getBitmap();
+                final Bitmap fbi = ((BitmapDrawable) imgView.getDrawable()).getBitmap();
 
-                Mat mat = new Mat(bmm.getWidth(), bmm.getHeight(), CvType.CV_8UC4);
-                Utils.bitmapToMat(bmm, mat);
-                String ans = decodeQRcode(bmm);
+                Mat mat = new Mat(fbi.getWidth(), fbi.getHeight(), CvType.CV_8UC4);
+                Utils.bitmapToMat(fbi, mat);
+                String ans = decodeQRcode(fbi);
                 String[] output = ans.split(";");
                 Scalar lineColor = new Scalar(255,0,0,255);
                 int lineWidth = 3;
