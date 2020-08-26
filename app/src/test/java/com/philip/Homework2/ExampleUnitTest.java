@@ -1,4 +1,4 @@
-package com.philip.whyhomework;
+package com.philip.Homework2;
 
 import org.junit.Test;
 

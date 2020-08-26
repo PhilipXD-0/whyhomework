@@ -1,10 +1,8 @@
-package com.philip.whyhomework;
+package com.philip.Homework2;
 
 import android.graphics.Bitmap;
 
 import android.graphics.drawable.BitmapDrawable;
-import android.graphics.BitmapFactory;
-import android.os.AsyncTask;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -13,23 +11,15 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
-import org.opencv.android.InstallCallbackInterface;
-import org.opencv.android.LoaderCallbackInterface;
+
 import org.opencv.android.OpenCVLoader;
 import org.opencv.android.Utils;
-import org.opencv.aruco.Aruco;
-import org.opencv.aruco.Dictionary;
 import org.opencv.core.CvType;
 import org.opencv.core.Mat;
 import org.opencv.core.Point;
 import org.opencv.core.Scalar;
 import org.opencv.imgproc.Imgproc;
 import org.opencv.objdetect.QRCodeDetector;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.MalformedURLException;
-import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     ImageView imgView;
