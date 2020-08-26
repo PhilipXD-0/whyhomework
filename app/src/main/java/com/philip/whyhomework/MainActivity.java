@@ -66,9 +66,9 @@ public class MainActivity extends AppCompatActivity {
                 Scalar lineColor = new Scalar(255,0,0,255);
                 int lineWidth = 3;
 
-                for(int i = 0 ; i<output.length ; i++){
+                for(int k = 0 ; k<output.length ; k++){
                     Point[]points={new Point(), new Point()};
-                    String [] Space = output[i].split(" ");
+                    String [] Space = output[k].split(" ");
                     for(int j = 0 ; j < Space.length ; j++){
                         String [] abc = Space[j].split(",");
                         points[j] = new Point(Integer.parseInt(abc[0]),Integer.parseInt(abc[1]) );
